@@ -1,4 +1,3 @@
-
 /*
 ||-----------------------------------||
 ||        Rahat Khan Pathan          ||
@@ -42,9 +41,8 @@ int main()
         else if(t=="ZDRAVSTVUJTE")
             cout<<"Case "<<ts<<": RUSSIAN"<<endl;
         else
-            cout<<"UNKNOWN"<<endl;
+            cout<<"Case "<<ts<<": UNKNOWN"<<endl;
         ts++;
     }
     return 0;
 }
-
