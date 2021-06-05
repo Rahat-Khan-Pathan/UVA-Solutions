@@ -23,11 +23,7 @@ void solve()
 {
     ll n;
     cin>>n;
-    ll ans=(((((n*567)/9)+7492)*235)/47)-498;
-    ans/=10;
-    if(ans<0)
-        ans=-ans;
-    cout<<ans%10<<endl;
+    cout<<abs((((((((n*567)/9)+7492)*235)/47)-498)/10)%10)<<endl;
 }
 int main()
 {
