@@ -41,17 +41,18 @@ int main()
         totalMoney+=downPayment;
         totalMoney-=(totalMoney*a[0]);
         percant=a[0];
-        for(i=1;i<=month+1;i++)
+        for(i=1;i<=month;i++)
         {
             if(totalMoney>currentMoney)
             {
-                (i-1==1)? cout<<i-1<<" month"<<endl : cout<<i-1<<" months"<<endl;
                 break;
             }
             if(a[i]>0) percant=a[i];
             currentMoney-=pay;
             totalMoney-=(totalMoney*percant);
         }
+        i--;
+        (i==1)? cout<<i<<" month"<<endl : cout<<i<<" months"<<endl;
     }
     return 0;
 }
