@@ -19,10 +19,6 @@
 #define no cout<<"NO"<<endl
 #define minus cout<<-1<<endl
 using namespace std;
-void solve()
-{
-
-}
 int main()
 {
     fast;
