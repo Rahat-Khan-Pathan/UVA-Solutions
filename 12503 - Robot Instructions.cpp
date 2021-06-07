@@ -34,7 +34,7 @@ void solve()
             ans++,pos[i]=1;
         else
         {
-            cin>>a>>x;;
+            cin>>a>>x;
             if(pos[x]==0)
                 ans--,pos[i]=0;
             else
