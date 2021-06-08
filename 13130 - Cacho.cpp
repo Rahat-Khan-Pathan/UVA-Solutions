@@ -20,26 +20,24 @@
 #define minus cout<<-1<<endl
 using namespace std;
 ll ts=1;
-double price(ll a,ll b,ll c,ll d,ll k,ll p)
-{
-    double ans=p*(sin(a*k+b)+cos(c*k+d)+2);
-    return ans;
-}
 int main()
 {
     fast;
-    ll p,a,b,c,d,n;
-    while(cin>>p>>a>>b>>c>>d>>n)
+    ll n=5,x;
+    cin>>x;
+    while(x--)
     {
-        ll i=1;
-        double mx=INT_MIN,mn=INT_MAX,ans=0;
-        for(i=1;i<=n;i++)
+        ll i=0,a[n+1],c=0;
+        for(i=0;i<n;i++)cin>>a[i];
+        for(i=1;i<n;i++)
         {
-            double prc=price(a,b,c,d,i,p);
-            mx=max(mx,prc);
-            ans=max(ans,mx-prc);
+            if(a[i]!=a[i-1]+1)
+            {
+                c=1;
+                break;
+            }
         }
-        cout<<ans<<endl;
+        (c==0)? cout<<"Y"<<endl : cout<<"N"<<endl;
     }
     return 0;
 }
