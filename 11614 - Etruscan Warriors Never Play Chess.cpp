@@ -8,7 +8,7 @@
 #include<bits/stdc++.h>
 #define ll long long int
 #define pub push_back
-#define pi 3.14159265359
+#define PI 3.14159265359
 #define vll vector<ll>
 #define All(X) (X).begin(),(X).end()
 #define Unique(X) (X).erase(unique(All(X)),(X).end()))
